@@ -40,7 +40,7 @@ services:
   pg-2:
     image: docker.io/bitnami/postgresql-repmgr:11
     volumes:
-      - pg_1_data:/bitnami/postgresql
+      - pg_2_data:/bitnami/postgresql
     networks:
       - database
     environment:
@@ -58,6 +58,7 @@ services:
 volumes:
   pg_0_data:
   pg_1_data:
+  pg_2_data:
 
 networks:
   database:
